@@ -1,0 +1,770 @@
+/* ==================================================
+   RESPONSIVE
+================================================== */
+
+@media (max-width: 950px) {
+
+    .programas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 620px) {
+
+    #programas {
+        padding: 55px 20px 65px;
+    }
+
+    #programas > h2 {
+        font-size: 29px;
+    }
+
+    .programas {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .programas article {
+        min-height: auto;
+    }
+
+}
+
+/* ==========================================================
+   CORRECCIÓN GENERAL PARA CELULARES
+========================================================== */
+
+@media (max-width: 768px) {
+
+    /* Evita desbordamiento horizontal */
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+
+    /* =========================
+       PORTADA
+    ========================= */
+
+    .hero-principal {
+        width: 100%;
+
+        min-height: 480px;
+
+        background-position: 62% center;
+        background-size: cover;
+    }
+
+
+    /* CONTENEDOR */
+
+    .hero-contenido {
+        width: 100%;
+        max-width: none;
+
+        min-height: 480px;
+
+        margin: 0;
+
+        padding: 45px 22px 35px;
+
+        display: flex;
+        align-items: center;
+    }
+
+
+    /* TEXTO */
+
+    .hero-texto {
+        width: 100%;
+        max-width: 360px;
+
+        padding: 0;
+
+        transform: none;
+    }
+
+    .hero-etiqueta {
+        font-size: 11px;
+        line-height: 1.4;
+    }
+
+
+    /* TÍTULO */
+
+    .hero-texto h1 {
+        font-size: 38px;
+        line-height: 1.02;
+
+        letter-spacing: -1px;
+
+        margin-bottom: 18px;
+    }
+
+
+    /* DESCRIPCIÓN */
+
+    .hero-texto p {
+        width: 100%;
+        max-width: 330px;
+
+        font-size: 13px;
+        line-height: 1.55;
+
+        margin-bottom: 22px;
+    }
+
+
+    /* BOTONES */
+
+    .hero-botones {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 10px;
+    }
+
+    .hero-boton {
+        width: 100%;
+
+        min-height: 44px;
+
+        padding: 0 15px;
+    }
+
+
+    /* FRASE DE LA DERECHA */
+
+    .hero-frase {
+        display: none;
+    }
+
+
+    /* CURVA AMARILLA */
+
+    .hero-principal::before {
+        width: 180px;
+        height: 100px;
+
+        transform: translate(-45px, -55px) rotate(-4deg);
+    }
+
+}
+
+/* ==========================================
+   BARRA SUPERIOR MÓVIL - CENTRADA
+========================================== */
+
+@media (max-width: 768px) {
+
+    .barra-superior {
+        width: 100%;
+        height: 27px;
+        min-height: 27px;
+        padding: 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .barra-superior-contenido {
+        width: 100%;
+        height: 27px;
+        min-height: 27px;
+
+        margin: 0;
+        padding: 0;
+
+        transform: none;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .barra-contacto {
+        width: auto;
+
+        margin: 0 auto;
+        padding: 0;
+
+        transform: none;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        gap: 5px;
+
+        font-size: 6.5px;
+        font-weight: 700;
+        line-height: 1;
+
+        white-space: nowrap;
+    }
+
+    .barra-contacto span {
+        display: inline-flex;
+        align-items: center;
+
+        gap: 2px;
+
+        flex-shrink: 0;
+        white-space: nowrap;
+    }
+
+    .barra-contacto span:first-child {
+        max-width: none;
+        white-space: nowrap;
+    }
+
+    .barra-contacto i {
+        font-size: 8px;
+        flex-shrink: 0;
+    }
+}
+
+/* =====================================================
+   HEADER MÓVIL - VERSIÓN FINAL
+===================================================== */
+
+@media (max-width: 768px) {
+
+    .header-principal {
+        width: 100%;
+        height: 60px !important;
+        min-height: 60px !important;
+        padding: 0 !important;
+        background: #ffffff;
+    }
+
+    .header-contenido {
+        width: 100%;
+        max-width: none;
+        height: 60px !important;
+        min-height: 60px !important;
+        margin: 0 !important;
+        padding: 0 10px !important;
+        box-sizing: border-box;
+
+        display: flex;
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
+        align-items: center !important;
+        justify-content: space-between;
+
+        gap: 14px;
+        transform: none !important;
+    }
+
+    .header-principal .logo {
+        display: flex !important;
+        flex: 1 1 50%;
+
+        width: auto !important;
+        max-width: 50%;
+        height: 60px !important;
+        max-height: 60px !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        align-items: center !important;
+        justify-content: flex-start;
+
+        transform: none !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        background: transparent !important;
+    }
+
+    .header-principal .logo img {
+        display: block !important;
+
+        width: 135px !important;
+        max-width: 100% !important;
+        height: auto !important;
+        max-height: 54px !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        object-fit: contain;
+
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+
+    .menu-principal,
+    .menu-toggle {
+        display: none !important;
+    }
+
+    .header-contenido > .boton-matricula {
+        position: static !important;
+
+        display: inline-flex !important;
+        flex: 0 0 auto;
+
+        align-items: center !important;
+        justify-content: center !important;
+
+        gap: 7px;
+
+        width: 145px !important;
+        min-width: 145px !important;
+
+        height: 40px !important;
+        min-height: 40px !important;
+
+        margin: 0 !important;
+        padding: 0 12px !important;
+
+        box-sizing: border-box;
+
+        font-size: 11px !important;
+        font-weight: 700;
+
+        white-space: nowrap;
+
+        border-radius: 22px !important;
+
+        transform: none !important;
+    }
+
+    .header-contenido > .boton-matricula i {
+        font-size: 14px;
+    }
+}
+
+
+/* =====================================================
+   IDENTIDAD INSTITUCIONAL - CELULAR
+===================================================== */
+
+@media (max-width: 768px) {
+
+    /* SECCIÓN COMPLETA */
+    .identidad {
+        width: 100%;
+        padding: 35px 16px !important;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+
+    /* TÍTULO */
+    .identidad-titulo {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto 25px;
+        padding: 0 5px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .identidad-titulo h2 {
+        font-size: 25px !important;
+        line-height: 1.25;
+        margin-bottom: 12px;
+    }
+
+    .identidad-titulo p {
+        max-width: 310px;
+        margin-left: auto;
+        margin-right: auto;
+
+        font-size: 11px;
+        line-height: 1.6;
+    }
+
+
+    /* ==================================
+       TARJETAS
+    ================================== */
+
+    .identidad-grid {
+        width: 100%;
+        max-width: 380px;
+
+        margin: 0 auto;
+
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+
+        gap: 16px !important;
+    }
+
+
+    /* CADA TARJETA */
+    .identidad-card {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+
+        height: auto !important;
+        min-height: 0 !important;
+
+        margin: 0 !important;
+
+        padding: 22px 20px !important;
+
+        box-sizing: border-box;
+
+        border-radius: 14px;
+    }
+
+
+    /* TARJETA DESTACADA - VISIÓN */
+    .identidad-card.destacada {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        transform: none !important;
+    }
+
+
+    /* NÚMERO */
+    .identidad-icono {
+        width: 38px;
+        height: 38px;
+
+        margin-bottom: 14px;
+
+        font-size: 14px;
+    }
+
+
+    /* MISIÓN / VISIÓN / VALORES */
+    .identidad-card h3 {
+        font-size: 17px !important;
+        margin-bottom: 12px;
+    }
+
+
+    /* TEXTO */
+    .identidad-card p,
+    .identidad-card li {
+        font-size: 12px !important;
+        line-height: 1.65 !important;
+    }
+
+
+    /* LISTA DE VALORES */
+    .lista-valores {
+        margin: 0;
+        padding: 0;
+    }
+
+}  
+
+/* =====================================================
+   GALERÍA MÓVIL - CARRUSEL HORIZONTAL
+===================================================== */
+
+@media (max-width: 768px) {
+
+    .seccion-galeria {
+        padding: 35px 0 40px !important;
+        overflow: hidden;
+    }
+
+    /* TÍTULO */
+    .titulo-galeria {
+        padding: 0 18px;
+        margin-bottom: 22px;
+        text-align: center;
+    }
+
+    .titulo-galeria h2 {
+        font-size: 24px !important;
+        line-height: 1.15;
+    }
+
+    .titulo-galeria p {
+        max-width: 290px;
+        margin-left: auto;
+        margin-right: auto;
+
+        font-size: 10px;
+        line-height: 1.5;
+    }
+
+
+    /* CONTENEDOR DE LAS FOTOS */
+    .galeria-grid {
+        width: 100%;
+
+        display: flex !important;
+        grid-template-columns: none !important;
+
+        gap: 12px;
+
+        overflow-x: auto;
+        overflow-y: hidden;
+
+        padding: 0 18px 12px;
+
+        box-sizing: border-box;
+
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+
+        -webkit-overflow-scrolling: touch;
+
+        scrollbar-width: none;
+    }
+
+    .galeria-grid::-webkit-scrollbar {
+        display: none;
+    }
+
+
+    /* CADA FOTO */
+    .galeria-grid .foto {
+        flex: 0 0 88% !important;
+
+        width: 88% !important;
+        height: 190px !important;
+
+        margin: 0 !important;
+
+        border-radius: 12px;
+
+        overflow: hidden;
+
+        scroll-snap-align: center;
+    }
+
+
+    /* SI TIENES FOTO-GRANDE */
+    .galeria-grid .foto-grande {
+        flex: 0 0 88% !important;
+
+        width: 88% !important;
+        height: 190px !important;
+
+        grid-column: auto !important;
+        grid-row: auto !important;
+    }
+
+
+    /* IMÁGENES */
+    .galeria-grid .foto img {
+        width: 100% !important;
+        height: 100% !important;
+
+        object-fit: cover;
+
+        display: block;
+    }
+
+}
+
+
+
+/* =====================================================
+   FOOTER MÓVIL SIMPLIFICADO
+   Contacto + Redes + Parte inferior
+===================================================== */
+
+@media (max-width: 768px) {
+
+    /* OCULTAR ENLACES RÁPIDOS */
+    .footer-columna:not(.footer-contacto):not(.footer-redes) {
+        display: none !important;
+    }
+
+    /* OCULTAR FORMULARIO */
+    .footer-formulario {
+        display: none !important;
+    }
+
+
+    /* CONTENEDOR */
+    .footer-contenido {
+        width: 100% !important;
+        max-width: none !important;
+
+        margin: 0 !important;
+        padding: 28px 22px 20px !important;
+
+        box-sizing: border-box;
+
+        display: flex !important;
+        flex-direction: column !important;
+
+        gap: 25px !important;
+    }
+
+
+    /* =========================
+       CONTACTO
+    ========================= */
+
+    .footer-contacto {
+        display: block !important;
+
+        width: 100% !important;
+        max-width: 100% !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .footer-contacto h3 {
+        margin: 0 0 13px !important;
+
+        font-size: 14px !important;
+        text-align: left;
+    }
+
+    .contacto-item {
+        width: 100%;
+
+        display: flex;
+        align-items: flex-start;
+
+        gap: 8px;
+
+        margin-bottom: 8px;
+
+        font-size: 10px !important;
+        line-height: 1.5;
+    }
+
+    .contacto-item i {
+        width: 16px;
+        flex: 0 0 16px;
+
+        margin-top: 2px;
+
+        text-align: center;
+    }
+
+    .contacto-item span {
+        min-width: 0;
+        overflow-wrap: anywhere;
+    }
+
+
+    /* =========================
+       REDES SOCIALES
+    ========================= */
+
+    .footer-redes {
+        display: block !important;
+
+        width: 100% !important;
+        max-width: 100% !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        text-align: center !important;
+    }
+
+    .footer-redes h3 {
+        margin: 0 0 12px !important;
+
+        font-size: 14px !important;
+
+        text-align: center !important;
+    }
+
+    .redes-iconos {
+        display: flex !important;
+
+        justify-content: center;
+        align-items: center;
+
+        gap: 14px;
+
+        margin: 0 0 14px !important;
+    }
+
+    .redes-iconos a {
+        width: 34px;
+        height: 34px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 50%;
+    }
+
+    .redes-iconos i {
+        font-size: 14px;
+    }
+
+
+    /* FRASE */
+  
+    .frase-footer span,
+    .frase-footer strong {
+        font-size: 9px !important;
+    }
+
+ }
+ 
+ 
+@media (max-width: 768px) {
+
+    /* CENTRAR FRASE "JUNTOS POR MÁS OPORTUNIDADES" */
+    .frase-footer {
+        width: 100% !important;
+        margin: 0 auto !important;
+        padding: 0 !important;
+
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        text-align: center !important;
+
+        position: static !important;
+        transform: none !important;
+    }
+
+    .frase-footer span,
+    .frase-footer strong {
+        display: block !important;
+
+        width: auto !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        text-align: center !important;
+
+        position: static !important;
+        transform: none !important;
+    }
+
+    /* CENTRAR LÍNEA AMARILLA */
+    .trazo-amarillo {
+        width: 110px !important;
+        height: 4px !important;
+
+        margin: 8px auto 0 !important;
+
+        position: static !important;
+
+        left: auto !important;
+        right: auto !important;
+
+        transform: none !important;
+    }
+}
